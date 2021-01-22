@@ -30,9 +30,7 @@ export default {
             active:false
         }
     },
-    mounted(){
 
-    },
     methods: {
 
         ClickImg(){
@@ -71,7 +69,7 @@ export default {
         cursor: pointer;
     }
     .popup {
-        position: absolute;
+        position: fixed;
         width: 80%;
         top: 50%;
         left: 50%;

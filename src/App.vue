@@ -37,51 +37,21 @@ export default {
     CompList,
 
   },
-// created () {
-//     this.getImages(6);
-//     window.addEventListener('scroll', this.handleScroll);
-// },
-// destroyed () {
-//   window.removeEventListener('scroll', this.handleScroll);
-// },
-  methods: {
-      // handleScroll() {
-      //   window.addEventListener('scroll', e => {
-      //     var scrollPos = window.scrollY
-      //     var winHeight = window.innerHeight
-      //     var docHeight = document.documentElement.scrollHeight
-      //     if(scrollPos + winHeight >= docHeight) {
-      //           this.loadImg()
-      //       }
-      //   });
 
-      // },
-      // loadImg() {
-      //     this.loading = true;
-      //     setTimeout(e => {
-      //         for (var i = 0; i < 8; i++) {
-      //             this.nextItem = this.images.length + 4;
-      //             this.getImages(this.nextItem)
-      //         }
-      //         this.loading = false;
-      //     }, 200);
-      //     console.log(this.images.length)
-      // },
-      getImages() {
-          var apiGiphy = `https://api.giphy.com/v1/gifs/trending?api_key=v6rKrvuRYH6cetg4lKfl4PdWJzXociiF&limit=${this.keynumber}`
-          fetch(apiGiphy)
-              .then(response => response.json())
-              .then(result => {
-                  this.images = result.data;
-              })
-      },
-      ClickImgEvent(imgID){
-        // console.log(imgID.id)
-      },
+  methods: {
+    getImages() {
+      var apiGiphy = `https://api.giphy.com/v1/gifs/trending?api_key=v6rKrvuRYH6cetg4lKfl4PdWJzXociiF&limit=${this.keynumber}`
+      fetch(apiGiphy)
+        .then(response => response.json())
+        .then(result => {
+          this.images = result.data;
+      })
+    },
+    ClickImgEvent(imgID){
+
+    },
 
   },
-
-
 
 }
 </script>

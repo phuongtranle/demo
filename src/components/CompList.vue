@@ -31,21 +31,6 @@ export default {
             nextItem: 1,
         }
     },
-    // mounted () {
-
-    // // Detect when scrolled to bottom.
-    //     const listElm = document.querySelector('#load-img');
-    //     listElm.addEventListener('scroll', this.handleScroll)
-    //     // if(listElm.scrollTop + listElm.clientHeight >= listElm.scrollHeight) {
-    //     //     // this.loadMore();
-    //     //     console.log('1111')
-    //     // }
-    //     // });
-
-    //     // Initially load some items.
-    // // console.log(listElm.scrollTop + listElm.clientHeight+'---'+listElm.scrollHeight)
-
-    // },
 
     methods: {
 
